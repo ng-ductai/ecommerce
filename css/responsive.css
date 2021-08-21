@@ -1,0 +1,141 @@
+
+/* media queries  */
+
+@media (max-width:1023px){
+
+    .header-search_input{
+        width: 100%;
+    }
+
+    #header-menu-bar{
+        display: block;
+    }
+
+    .header-navbar{
+        position: fixed;
+        top: -200rem; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 100vh rgba(0,0,0,.3);
+        z-index: 100;
+        opacity: 0;
+    }
+
+    .header-navbar ul{
+        flex-flow: column;
+        background: linear-gradient(var(--blue), blueviolet);
+        border: 2px solid #fff;
+        box-shadow: 0 .3rem .5rem #000;
+        padding: 40px 0;
+        width: 300px;
+    }
+
+    .header-navbar ul li{
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .header-navbar ul li a{
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header-bottom .nav-toggle{
+        top:50%;
+        opacity: 1;
+    }
+
+    .arrival .box-container{
+        width: auto;
+    }
+
+}
+
+@media (max-width:1023px) and (min-width:740px){
+    html{
+        font-size: 55%;
+    }
+
+    .feature-container_content {
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width:739px){
+
+    .slider-container_item-content h3{
+        font-size: 3rem;
+    }
+
+    .slider-container_item-content p{
+        font-size: 2rem;
+        width: auto;
+    }
+
+    .feature-container_image{
+        flex-flow: column wrap;
+    }
+
+    .feature-container_image .small-image{
+        flex-flow: row wrap;
+        padding-bottom: 2rem;
+    }
+
+    .feature-container_content{
+        padding: 20px;
+        border-top: .1rem solid rgba(0,0,0,.3);
+    }
+
+        
+    .feature-container_content h3{
+        font-size: 2rem;
+        color: var(--blue);
+    }
+
+    .feature-container_content p{
+        width: auto;
+        font-size: 1.8rem;
+    }
+
+    .feature-container_content .price{
+        font-size: 1.8rem;
+    }
+
+    .feature-container_content .stars i,
+    .feature-container_content .stars span {
+        font-size: 1.5rem;
+    }
+
+    .footer .box-container_item-share a{
+        height: 30px;
+        width: 30px;       
+        margin-bottom: 10px;
+        line-height: 16px;
+    }
+    
+    .feature-container_image .big-image img{
+        height: 200px;
+        margin: 20px 0;
+    }
+}
+
+
+@media (max-width:450px){
+
+
+   /*  .header-top{
+        flex-flow: column;
+        padding:1rem;
+    } */
+
+    .header-logo{
+        padding-bottom: 1.5rem;
+    }
+
+}
